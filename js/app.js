@@ -14,7 +14,7 @@ const xhr = new XMLHttpRequest();
 
 xhr.open(
   "GET",
-  `http://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`,
+  `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`,
   true
 );
 
