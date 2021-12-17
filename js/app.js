@@ -8,13 +8,14 @@ let newsAccordian = document.getElementById("newsAccordion");
 // initialize the news ap parameters
 let country = "in";
 let apiKey = "a5eb5b63a4be7d013ba9f67202674929";
+let keyword = "developer";
 
 // create a ajax get request
 const xhr = new XMLHttpRequest();
 
 xhr.open(
   "GET",
-  `https://gnews.io/api/v4/country=${country}?token=${apiKey}`,
+  `https://gnews.io/api/v4/q=${keyword}&country=${country}?token=${apiKey}`,
   true
 );
 
