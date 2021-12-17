@@ -15,7 +15,7 @@ const xhr = new XMLHttpRequest();
 
 xhr.open(
   "GET",
-  `https://gnews.io/api/v4/q=${keyword}&country=${country}?token=${apiKey}`,
+  `https://gnews.io/api/v4/search?q=${keyword}&country=${country}&token=${apiKey}`,
   true
 );
 
